@@ -53,9 +53,3 @@ class Sorting:
 
 		self.sorted_array= sorted(self.array)
 		return self.sorted_array
-
-array= [5, 8, 2, 4, 1, 9, 3, 7, 6]
-print(array)
-sorted_array= Sorting(array).sort_array()
-print(sorted_array)
-
