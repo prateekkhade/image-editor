@@ -2,8 +2,9 @@
 Finds median given a sorted array
 '''
 from __future__ import division
+from sort import Sorting
 
-def median(array, int_return=True):
+def median(array, int_return=True, array_sorted= False):
 	'''
 	# Returns: median of a sorted array
 
@@ -20,6 +21,10 @@ def median(array, int_return=True):
 
 	if array_len==1:
 		return array[0]
+
+	if not array_sorted:
+		sortarr= Sorting(array)
+		array= sortarr.sort_array()
 
 	if array_len%2!=0:#odd length array
 		return array[array_len//2]
