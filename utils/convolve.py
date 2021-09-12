@@ -77,7 +77,6 @@ class convolve2D:
 			for k_row in range(0, self.len_kernel_rows):
 				for k_col in range(0, self.len_kernel_cols):
 					array.append(self.matrix[row-1+k_row][col-1+k_col])
-			print(sorted(array), median(array))
 			self.ret_mat[row][col]= median(array)
 			return
 
