@@ -2,8 +2,6 @@
 Convolves a kernel over a matrix(image)
 '''
 from median import median
-import cv2
-import numpy as np
 
 class convolve2D:
 	def __init__(self, kernel= None, matrix= None, padding=0, stride=1):
@@ -102,5 +100,3 @@ class convolve2D:
 
 		# Convolve helper
 		self._convolve2D()
-
-
